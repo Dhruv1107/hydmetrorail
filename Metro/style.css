@@ -1,0 +1,14 @@
+body {
+     background-image: url("background-website-26-hd-wallpaper-background-and-wallpaper.jpg");
+    background-repeat: repeat-y;
+
+	background-size : cover;
+    
+}
+      .Heading {
+        font-family: 'Lobster', cursive;
+        font-size: 48px;
+		text-align: center;
+		color: white;
+      }
+	  

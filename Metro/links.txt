@@ -1,0 +1,17 @@
+https://stackoverflow.com/questions/19162553/iis-401-3-unauthorized
+https://www.youtube.com/watch?v=I32AnqJzD58
+https://stackoverflow.com/questions/6823316/python-on-iis-how
+https://docs.python.org/3/library/http.cookies.html
+https://www.tutorialspoint.com/python/python_database_access.htm
+
+
+
+
+
+CREATE TABLE details (
+fromstation text NOT NULL,
+ tostation text NOT NULL,
+ amount integer NOT NULL,
+ cardnum integer NOT NULL,
+        FOREIGN KEY (cardnum) REFERENCES recharge(cardnum)
+);

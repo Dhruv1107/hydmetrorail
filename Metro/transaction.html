@@ -1,0 +1,90 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="jquery-3.2.1.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Asap+Condensed" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+		li
+		{ 
+		display:inline-block;
+		}  
+		img{
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+		}
+		table,td {
+	margin-left:31%;
+	padding-top: .5em;
+    padding-bottom: .5em;
+	}
+		.btn-group {
+	margin-left:45%;
+	}  
+	 </style>  
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Metro</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li style="padding-left:30px;"><a href="homepage.html">Home&nbsp</a></li>
+      <li style="padding-left:30px;"><a href="rates.html" >Metro Rates</a></li>
+	  <li style="padding-left:30px;"><a href="prates.html">Parking rates</a></li>
+	  <li style="padding-left:30px;"><a href="recharge.html">Recharge</a></li>
+	  <li style="padding-left:30px;"><a href="coupon.html">Apply Coupon</a></li>
+	  <li style="padding-left:30px;"><a href="checkbalance.html">Check Balance</a></li>
+	   <li class="active" style="padding-left:30px;"><a href="#">Transaction History</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+		<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-cog"></span></a>
+		<ul class="dropdown-menu">
+		  
+          <li><a href="settings.html">Change Password</a></li>
+          <li><a href="logout.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+          
+        </ul>
+		</li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<form action="transaction.py" method="POST">
+<table style="width:50%">
+		<tr>
+			<td><font size="5" color="#00FF7F"><strong>Enter card number</strong></font></td>
+			<td>
+			<input type="text" class="form-control" id="usr" name="cardno" placeholder="Enter Card Number">
+			<small><b id="emptyid"></b></small>
+			</td>
+		</tr><br />
+		
+		</table>
+		<br /><br />
+		<div class="btn-group">
+	   <button type="submit" value="Check previous transactions" class="btn btn-primary">Check previous transactions</button>
+	   </div>
+
+</form>
+
+
+
+
+
+
+
+
+</body>
+</html>
